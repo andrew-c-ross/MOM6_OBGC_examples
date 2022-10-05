@@ -18,7 +18,3 @@
  "ICE", "dhdt",               "",         "",                        "none",      80.0
  "ICE", "dedt",               "",         "",                        "none",       2.0e-6
  "ICE", "drdt",               "",         "",                        "none",      10.0
-#CFCs
- "ATM", "cfc11_flux_pcair_atm","CFC_11","INPUT/cfc.bc.nc","bilinear", 1.0e-12
- "ATM", "cfc12_flux_pcair_atm","CFC_12","INPUT/cfc.bc.nc","bilinear", 1.0e-12
-

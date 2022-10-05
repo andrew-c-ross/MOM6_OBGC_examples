@@ -41,8 +41,6 @@ OM4_single_column
  "ocean_model",   "MSTAR_LT", "MSTAR_LT", "ocean_daily", "all", "mean", "none", 2
  "ocean_model",   "ePBL_h_ML", "ePBL_h_ML", "ocean_daily","all","mean","none",2
 
- "generic_cfc",   "cfc11","cfc11", "ocean_daily","all","mean","none",2
- "generic_cfc",   "cfc12","cfc12", "ocean_daily","all","mean","none",2
 
 "ocean_scalar_day",        1, "days", 1, "days", "time"
 # Monthly time series
@@ -89,15 +87,15 @@ OM4_single_column
  "generic_cobalt","o2_deltap",         "o2_deltap",        "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","o2_kw",             "o2_kw",            "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","o2_sc_no",          "o2_sc_no",         "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","dic_stf",          "dic_stf",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dic_stf",          "dic_stf",           "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","dic_stf_gas",       "dic_stf_gas",      "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","o2_stf",           "o2_stf",            "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_stf",           "o2_stf",            "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","o2_stf_gas",        "o2_stf_gas",       "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","alk_stf",          "alk_stf",           "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","fed_stf",          "fed_stf",           "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","lith_stf",         "lith_stf",          "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","nh4_stf",          "nh4_stf",           "ocean_cobalt_sfc","all","mean","none",2
-# "generic_cobalt","no3_stf",          "no3_stf",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","alk_stf",          "alk_stf",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","fed_stf",          "fed_stf",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","lith_stf",         "lith_stf",          "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","nh4_stf",          "nh4_stf",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","no3_stf",          "no3_stf",           "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","dep_dry_fed",       "dep_dry_fed",      "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","dep_dry_nh4",       "dep_dry_nh4",      "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","dep_dry_no3",       "dep_dry_no3",      "ocean_cobalt_sfc","all","mean","none",2
@@ -122,40 +120,40 @@ OM4_single_column
  "generic_cobalt","runoff_flux_ldop",  "runoff_flux_ldop", "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","runoff_flux_sldop", "runoff_flux_sldop","ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","runoff_flux_srdop", "runoff_flux_srdop","ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_def_fe_di",     "sfc_def_fe_di",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_def_fe_lgp",    "sfc_def_fe_lgp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_def_fe_smp",    "sfc_def_fe_smp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_felim_di",      "sfc_felim_di",     "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_felim_lgp",     "sfc_felim_lgp",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_felim_smp",     "sfc_felim_smp",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_irrlim_di",     "sfc_irrlim_di",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_irrlim_lgp",    "sfc_irrlim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_irrlim_smp",    "sfc_irrlim_smp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_theta_di",      "sfc_theta_di",     "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_theta_lgp",     "sfc_theta_lgp",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_theta_smp",     "sfc_theta_smp",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_mu_di",         "sfc_mu_di",        "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_mu_lgp",        "sfc_mu_lgp",       "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_mu_smp",        "sfc_mu_smp",       "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_nh4lim_lgp",    "sfc_nh4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_nh4lim_smp",    "sfc_nh4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_no3lim_lgp",    "sfc_no3lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_no3lim_smp",    "sfc_no3lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_po4lim_di",     "sfc_po4lim_di",    "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_po4lim_lgp",    "sfc_po4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_po4lim_smp",    "sfc_po4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_q_fe_2_n_di",   "sfc_q_fe_2_n_di",  "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_q_fe_2_n_lgp",  "sfc_q_fe_2_n_lgp", "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","sfc_q_fe_2_n_smp",  "sfc_q_fe_2_n_smp", "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","pka_nh3",           "pka_nh3",          "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_stf",           "nh4_stf",          "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_stf_gas",       "nh4_stf_gas",      "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_alpha",         "nh4_alpha",        "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_csurf",         "nh4_csurf",        "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_deltap",        "nh4_deltap",       "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_kw",            "nh4_kw",           "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","nh4_sc_no",         "nh4_sc_no",        "ocean_cobalt_sfc","all","mean","none",2
- "generic_cobalt","pnh3surf",          "pnh3surf",         "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_def_fe_di",     "sfc_def_fe_di",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_def_fe_lgp",    "sfc_def_fe_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_def_fe_smp",    "sfc_def_fe_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_felim_di",      "sfc_felim_di",     "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_felim_lgp",     "sfc_felim_lgp",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_felim_smp",     "sfc_felim_smp",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_irrlim_di",     "sfc_irrlim_di",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_irrlim_lgp",    "sfc_irrlim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_irrlim_smp",    "sfc_irrlim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_theta_di",      "sfc_theta_di",     "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_theta_lgp",     "sfc_theta_lgp",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_theta_smp",     "sfc_theta_smp",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_mu_di",         "sfc_mu_di",        "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_mu_lgp",        "sfc_mu_lgp",       "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_mu_smp",        "sfc_mu_smp",       "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_nh4lim_lgp",    "sfc_nh4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_nh4lim_smp",    "sfc_nh4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_no3lim_lgp",    "sfc_no3lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_no3lim_smp",    "sfc_no3lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_po4lim_di",     "sfc_po4lim_di",    "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_po4lim_lgp",    "sfc_po4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_po4lim_smp",    "sfc_po4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_q_fe_2_n_di",   "sfc_q_fe_2_n_di",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_q_fe_2_n_lgp",  "sfc_q_fe_2_n_lgp", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","sfc_q_fe_2_n_smp",  "sfc_q_fe_2_n_smp", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","pka_nh3",           "pka_nh3",          "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_stf",           "nh4_stf",          "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_stf_gas",       "nh4_stf_gas",      "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_alpha",         "nh4_alpha",        "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_csurf",         "nh4_csurf",        "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_deltap",        "nh4_deltap",       "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_kw",            "nh4_kw",           "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","nh4_sc_no",         "nh4_sc_no",        "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","pnh3surf",          "pnh3surf",         "ocean_cobalt_sfc","all","mean","none",2
 #===================
 # Generic COBALT bottom fields:
 #==================
