@@ -35,7 +35,7 @@ C_P = 3992.0                    !   [J kg-1 K-1] default = 3991.86795711963
                                 ! of conservative temperature.
 CHECK_BAD_SURFACE_VALS = True   !   [Boolean] default = False
                                 ! If true, check the surface state for ridiculous values.
-BAD_VAL_SSH_MAX = 50.0          !   [m] default = 20.0
+BAD_VAL_SSH_MAX = 200.0          !   [m] default = 20.0
                                 ! The value of SSH above which a bad value message is
                                 ! triggered, if CHECK_BAD_SURFACE_VALS is true.
 BAD_VAL_SSS_MAX = 75.0          !   [PPT] default = 45.0

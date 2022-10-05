@@ -70,3 +70,4 @@ GENERIC_TRACER_IC_FILE = "MOM_GENERICS.res.nc"
 ! GEOTHERMAL_FILE = "geothermal_davies2013_v1.nc"
 ! GEOTHERMAL_VARNAME = "geothermal_hf" ! default = "geo_heat"
 
+#override   ADJUST_NET_FRESH_WATER_TO_ZERO = False

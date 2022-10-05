@@ -11,11 +11,11 @@ OM4_single_column
  "ocean_model",   "thetao",      "thetao",         "ocean_daily",        "all", "mean", "none",2
  "ocean_model",   "so",          "so",         "ocean_daily",        "all", "mean", "none",2
  "ocean_model",   "Kd_interface","Kd_interface", "ocean_daily", "all", "mean", "none", 2
- "ocean_model",   "Kv_shear","Kv_shear", "ocean_daily", "all", "mean", "none", 2
- "ocean_model","GOTM_L","GOTM_L","ocean_daily","all", "mean", "none",2
- "ocean_model","GOTM_TKE","GOTM_TKE","ocean_daily","all", "mean", "none",2
- "ocean_model","GOTM_KM","GOTM_KM","ocean_daily","all", "mean", "none",2
- "ocean_model","GOTM_KH","GOTM_KH","ocean_daily","all", "mean", "none",2
+ #"ocean_model",   "Kv_shear","Kv_shear", "ocean_daily", "all", "mean", "none", 2
+ #"ocean_model","GOTM_L","GOTM_L","ocean_daily","all", "mean", "none",2
+ #"ocean_model","GOTM_TKE","GOTM_TKE","ocean_daily","all", "mean", "none",2
+ #"ocean_model","GOTM_KM","GOTM_KM","ocean_daily","all", "mean", "none",2
+ #"ocean_model","GOTM_KH","GOTM_KH","ocean_daily","all", "mean", "none",2
 
  "ocean_model",   "T_tendency_vert_remap", "T_tendency_vert_remap", "ocean_daily", "all", "mean", "none", 2
  "ocean_model",   "T_tendency", "T_tendency", "ocean_daily", "all", "mean", "none", 2
@@ -55,6 +55,9 @@ OM4_single_column
  "ocean_model", "LwLatSens_ga",        "LwLatSens_ga",       "ocean_scalar_day",  "all", "mean",  "none",1  # global mean LW+lat+sens
  "ocean_model", "ssh_ga",              "ssh_ga",             "ocean_scalar_day",  "all", "mean",  "none",1  # global mean ssh
  "ocean_model", "precip_ga",           "precip_ga",          "ocean_scalar_day",  "all", "mean",  "none",1  # global mean precip
+ "ocean_model", "total_salt_flux",           "total_salt_flux",          "ocean_scalar_day",  "all", "mean",  "none",1 
+ "ocean_model", "total_salt_Flux_In",           "total_salt_Flux_In",          "ocean_scalar_day",  "all", "mean",  "none",1 
+ "ocean_model", "soga",           "soga",          "ocean_scalar_day",  "all", "mean",  "none",1 
 
 "ice_daily", 1, "days",   1, "days", "time"
  "ice_model",   "SW", "SW", "ice_daily", "all", "mean", "none", 2
@@ -121,6 +124,8 @@ OM4_single_column
  "generic_cobalt","runoff_flux_ldop",  "runoff_flux_ldop", "ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","runoff_flux_sldop", "runoff_flux_sldop","ocean_cobalt_sfc","all","mean","none",2
  "generic_cobalt","runoff_flux_srdop", "runoff_flux_srdop","ocean_cobalt_sfc","all","mean","none",2
+ "ocean_model","lrunoff", "lrunoff","ocean_cobalt_sfc","all","mean","none",2
+
  #"generic_cobalt","sfc_def_fe_di",     "sfc_def_fe_di",    "ocean_cobalt_sfc","all","mean","none",2
  #"generic_cobalt","sfc_def_fe_lgp",    "sfc_def_fe_lgp",   "ocean_cobalt_sfc","all","mean","none",2
  #"generic_cobalt","sfc_def_fe_smp",    "sfc_def_fe_smp",   "ocean_cobalt_sfc","all","mean","none",2
