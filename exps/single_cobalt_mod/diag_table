@@ -68,6 +68,7 @@ OM4_single_column
 "ocean_cobalt_sfc",             1, "months", 1, "days", "time",
 "ocean_cobalt_btm",             1, "months", 1, "days", "time",
 "ocean_cobalt_tracers_int",     1, "months", 1, "days", "time",
+"ocean_cobalt_tracers_int_daily",     1, "days", 1, "days", "time",
 "ocean_cobalt_fluxes_int",      1, "months", 1, "days", "time",
 "ocean_cobalt_fdet_100",        1, "months", 1, "days", "time",
 #
@@ -217,63 +218,74 @@ OM4_single_column
  "generic_cobalt","wc_vert_int_si",   "wc_vert_int_si",  "ocean_cobalt_tracers_int","all","mean","none",2
  "generic_cobalt","wc_vert_int_o2",   "wc_vert_int_o2",  "ocean_cobalt_tracers_int","all","mean","none",2
  "generic_cobalt","wc_vert_int_alk",  "wc_vert_int_alk", "ocean_cobalt_tracers_int","all","mean","none",2
+
+ "generic_cobalt","wc_vert_int_c",    "wc_vert_int_c",   "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_dic",  "wc_vert_int_dic", "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_doc",  "wc_vert_int_doc", "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_poc",  "wc_vert_int_poc", "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_n",    "wc_vert_int_n",   "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_p",    "wc_vert_int_p",   "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_fe",   "wc_vert_int_fe",  "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_si",   "wc_vert_int_si",  "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_o2",   "wc_vert_int_o2",  "ocean_cobalt_tracers_int_daily","all","mean","none",2
+ "generic_cobalt","wc_vert_int_alk",  "wc_vert_int_alk", "ocean_cobalt_tracers_int_daily","all","mean","none",2
 #=======================
 # Generic COBALT integrated flux variables
 #=======================
- "generic_cobalt","jprod_nsmp_100",          "jprod_nsmp_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nlgp_100",          "jprod_nlgp_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndi_100",           "jprod_ndi_100",            "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nsmp_new_100",      "jprod_nsmp_new_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nlgp_new_100",      "jprod_nlgp_new_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndi_new_100",       "jprod_ndi_new_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndi_n2_100",        "jprod_ndi_n2_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nsmz_100",          "jprod_nsmz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nmdz_100",          "jprod_nmdz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nlgz_100",          "jprod_nlgz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_nbact_100",         "jprod_nbact_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_mesozoo_200",       "jprod_mesozoo_200",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_nsmp_100",         "jzloss_nsmp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_nlgp_100",         "jzloss_nlgp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_ndi_100",          "jzloss_ndi_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jaggloss_nsmp_100",       "jaggloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jaggloss_nlgp_100",       "jaggloss_nlgp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jvirloss_nsmp_100",       "jvirloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jexuloss_nsmp_100",       "jexuloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jexuloss_nlgp_100",       "jexuloss_nlgp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jexuloss_ndi_100",        "jexuloss_ndi_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jingest_n_nsmz_100",      "jingest_n_nsmz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jingest_n_nmdz_100",      "jingest_n_nmdz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jingest_n_nlgz_100",      "jingest_n_nlgz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jingest_n_hp_100",        "jingest_n_hp_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_nsmz_100",         "jzloss_nsmz_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_nmdz_100",         "jzloss_nmdz_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jhploss_nmdz_100",        "jhploss_nmdz_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jhploss_nlgz_100",        "jhploss_nlgz_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndet_nmdz_100",     "jprod_ndet_nmdz_100",      "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndet_nlgz_100",     "jprod_ndet_nlgz_100",      "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_ndet_hp_100",       "jprod_ndet_hp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_don_nsmz_100",      "jprod_don_nsmz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_don_nmdz_100",      "jprod_don_nmdz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jremin_n_nsmz_100",       "jremin_n_nsmz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jremin_n_nmdz_100",       "jremin_n_nmdz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jremin_n_nlgz_100",       "jremin_n_nlgz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jremin_n_hp_100",         "jremin_n_hp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","juptake_ldon_nbact_100",  "juptake_ldon_nbact_100",   "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jvirloss_nbact_100",      "jvirloss_nbact_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jzloss_nbact_100",        "jzloss_nbact_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jremin_n_nbact_100",      "jremin_n_nbact_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_lithdet_100",       "jprod_lithdet_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_sidet_100",         "jprod_sidet_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_cadet_calc_100",    "jprod_cadet_calc_100",     "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt","jprod_cadet_arag_100",    "jprod_cadet_arag_100",     "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","jremin_ndet_100",        "jremin_ndet_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jdiss_sidet","wc_vert_int_jdiss_sidet",  "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jdiss_cadet","wc_vert_int_jdiss_cadet",  "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jo2resp",    "wc_vert_int_jo2resp",      "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jprod_cadet","wc_vert_int_jprod_cadet",  "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jno3denit",  "wc_vert_int_jno3denit",    "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jnitrif",    "wc_vert_int_jnitrif",      "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_juptake_nh4","wc_vert_int_juptake_nh4",  "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_juptake_no3","wc_vert_int_juptake_no3",  "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_nfix",       "wc_vert_int_nfix",         "ocean_cobalt_fluxes_int","all","mean","none",2
- "generic_cobalt ","wc_vert_int_jprod_nh4",  "wc_vert_int_jprod_nh4",    "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nsmp_100",          "jprod_nsmp_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nlgp_100",          "jprod_nlgp_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndi_100",           "jprod_ndi_100",            "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nsmp_new_100",      "jprod_nsmp_new_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nlgp_new_100",      "jprod_nlgp_new_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndi_new_100",       "jprod_ndi_new_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndi_n2_100",        "jprod_ndi_n2_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nsmz_100",          "jprod_nsmz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nmdz_100",          "jprod_nmdz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nlgz_100",          "jprod_nlgz_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_nbact_100",         "jprod_nbact_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_mesozoo_200",       "jprod_mesozoo_200",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_nsmp_100",         "jzloss_nsmp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_nlgp_100",         "jzloss_nlgp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_ndi_100",          "jzloss_ndi_100",           "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jaggloss_nsmp_100",       "jaggloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jaggloss_nlgp_100",       "jaggloss_nlgp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jvirloss_nsmp_100",       "jvirloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jexuloss_nsmp_100",       "jexuloss_nsmp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jexuloss_nlgp_100",       "jexuloss_nlgp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jexuloss_ndi_100",        "jexuloss_ndi_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jingest_n_nsmz_100",      "jingest_n_nsmz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jingest_n_nmdz_100",      "jingest_n_nmdz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jingest_n_nlgz_100",      "jingest_n_nlgz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jingest_n_hp_100",        "jingest_n_hp_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_nsmz_100",         "jzloss_nsmz_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_nmdz_100",         "jzloss_nmdz_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jhploss_nmdz_100",        "jhploss_nmdz_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jhploss_nlgz_100",        "jhploss_nlgz_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndet_nmdz_100",     "jprod_ndet_nmdz_100",      "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndet_nlgz_100",     "jprod_ndet_nlgz_100",      "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_ndet_hp_100",       "jprod_ndet_hp_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_don_nsmz_100",      "jprod_don_nsmz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_don_nmdz_100",      "jprod_don_nmdz_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jremin_n_nsmz_100",       "jremin_n_nsmz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jremin_n_nmdz_100",       "jremin_n_nmdz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jremin_n_nlgz_100",       "jremin_n_nlgz_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jremin_n_hp_100",         "jremin_n_hp_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","juptake_ldon_nbact_100",  "juptake_ldon_nbact_100",   "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jvirloss_nbact_100",      "jvirloss_nbact_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jzloss_nbact_100",        "jzloss_nbact_100",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jremin_n_nbact_100",      "jremin_n_nbact_100",       "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_lithdet_100",       "jprod_lithdet_100",        "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_sidet_100",         "jprod_sidet_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_cadet_calc_100",    "jprod_cadet_calc_100",     "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt","jprod_cadet_arag_100",    "jprod_cadet_arag_100",     "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","jremin_ndet_100",        "jremin_ndet_100",          "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jdiss_sidet","wc_vert_int_jdiss_sidet",  "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jdiss_cadet","wc_vert_int_jdiss_cadet",  "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jo2resp",    "wc_vert_int_jo2resp",      "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jprod_cadet","wc_vert_int_jprod_cadet",  "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jno3denit",  "wc_vert_int_jno3denit",    "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jnitrif",    "wc_vert_int_jnitrif",      "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_juptake_nh4","wc_vert_int_juptake_nh4",  "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_juptake_no3","wc_vert_int_juptake_no3",  "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_nfix",       "wc_vert_int_nfix",         "ocean_cobalt_fluxes_int","all","mean","none",2
+# "generic_cobalt ","wc_vert_int_jprod_nh4",  "wc_vert_int_jprod_nh4",    "ocean_cobalt_fluxes_int","all","mean","none",2

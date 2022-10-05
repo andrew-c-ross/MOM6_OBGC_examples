@@ -629,7 +629,7 @@ CHECK_DIFFUSIVE_CFL = True      !   [Boolean] default = False
 ! This module implements neutral diffusion of tracers
 
 ! === module ocean_model_init ===
-ENERGYSAVEDAYS = 0.25           !   [days] default = 1.0
+ENERGYSAVEDAYS = 1.0           !   [days] default = 1.0
                                 ! The interval in units of TIMEUNIT between saves of the
                                 ! energies of the run and other globally summed diagnostics.
 
