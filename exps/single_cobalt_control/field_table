@@ -74,6 +74,7 @@ no3_valid_min = 0.0
 # O2 from WOA2013  (/archive/mdteam/obs/NOAA-NODC/WOA13/v1.00a/woa13_all_o_annual_01.nc)
 # min = 0, max = 15.44 from input dataset
 # multiply by (1000/22391.6)/1035 to convert from ml/l to mol/kg
+#o2_src_file = INPUT/woa13_all_o_annual_01.nc
 o2_src_file = INPUT/woa13_all_o_annual_01.nc
 o2_src_var_name = o_an
 o2_src_var_unit = milliliters_per_liter
@@ -204,6 +205,15 @@ felg_src_var_record = 1
 felg_src_var_gridspec = NONE
 felg_valid_min = 0.0
 #
+femd_src_file = INPUT/init_ocean_cobalt.res.nc
+femd_src_var_name = felg
+femd_src_var_unit = none
+femd_dest_var_name =  femd
+femd_dest_var_unit = mol kg-1
+femd_src_var_record = 1
+femd_src_var_gridspec = NONE
+femd_valid_min = 0.0
+#
 fesm_src_file = INPUT/init_ocean_cobalt.res.nc
 fesm_src_var_name = fesm
 fesm_src_var_unit = none
@@ -231,6 +241,42 @@ irr_mem_dest_var_unit = mol kg-1
 irr_mem_src_var_record = 1
 irr_mem_src_var_gridspec = NONE
 irr_mem_valid_min = 0.0
+#
+irr_mem_dp_src_file = INPUT/init_ocean_cobalt.res.nc
+irr_mem_dp_src_var_name = irr_mem
+irr_mem_dp_src_var_unit = none
+irr_mem_dp_dest_var_name =  irr_mem_dp
+irr_mem_dp_dest_var_unit = mol kg-1
+irr_mem_dp_src_var_record = 1
+irr_mem_dp_src_var_gridspec = NONE
+irr_mem_dp_valid_min = 0.0
+#
+irr_aclm_z_src_file = INPUT/init_ocean_cobalt.res.nc
+irr_aclm_z_src_var_name = irr_mem
+irr_aclm_z_src_var_unit = none
+irr_aclm_z_dest_var_name =  irr_aclm_z
+irr_aclm_z_dest_var_unit = mol kg-1
+irr_aclm_z_src_var_record = 1
+irr_aclm_z_src_var_gridspec = NONE
+irr_aclm_z_valid_min = 0.0
+#
+irr_aclm_sfc_src_file = INPUT/init_ocean_cobalt.res.nc
+irr_aclm_sfc_src_var_name = irr_mem
+irr_aclm_sfc_src_var_unit = none
+irr_aclm_sfc_dest_var_name =  irr_aclm_sfc
+irr_aclm_sfc_dest_var_unit = mol kg-1
+irr_aclm_sfc_src_var_record = 1
+irr_aclm_sfc_src_var_gridspec = NONE
+irr_aclm_sfc_valid_min = 0.0
+#
+irr_aclm_src_file = INPUT/init_ocean_cobalt.res.nc
+irr_aclm_src_var_name = irr_mem
+irr_aclm_src_var_unit = none
+irr_aclm_dest_var_name =  irr_aclm
+irr_aclm_dest_var_unit = mol kg-1
+irr_aclm_src_var_record = 1
+irr_aclm_src_var_gridspec = NONE
+irr_aclm_valid_min = 0.0
 #
 ldon_src_file = INPUT/init_ocean_cobalt.res.nc
 ldon_src_var_name = ldon
@@ -295,6 +341,15 @@ nlg_src_var_record = 1
 nlg_src_var_gridspec = NONE
 nlg_valid_min = 0.0
 #
+nmd_src_file = INPUT/init_ocean_cobalt.res.nc
+nmd_src_var_name = nlg
+nmd_src_var_unit = none
+nmd_dest_var_name =  nmd
+nmd_dest_var_unit = mol kg-1
+nmd_src_var_record = 1
+nmd_src_var_gridspec = NONE
+nmd_valid_min = 0.0
+#
 nsm_src_file = INPUT/init_ocean_cobalt.res.nc
 nsm_src_var_name = nsm
 nsm_src_var_unit = none
@@ -303,6 +358,42 @@ nsm_dest_var_unit = mol kg-1
 nsm_src_var_record = 1
 nsm_src_var_gridspec = NONE
 nsm_valid_min = 0.0
+#
+psm_src_file = INPUT/init_ocean_cobalt.res.nc
+psm_src_var_name = nsm
+psm_src_var_unit = none
+psm_dest_var_name =  psm
+psm_dest_var_unit = mol kg-1
+psm_src_var_record = 1
+psm_src_var_gridspec = NONE
+psm_valid_min = 0.0
+#
+pmd_src_file = INPUT/init_ocean_cobalt.res.nc
+pmd_src_var_name = nsm
+pmd_src_var_unit = none
+pmd_dest_var_name =  pmd
+pmd_dest_var_unit = mol kg-1
+pmd_src_var_record = 1
+pmd_src_var_gridspec = NONE
+pmd_valid_min = 0.0
+#
+plg_src_file = INPUT/init_ocean_cobalt.res.nc
+plg_src_var_name = nsm
+plg_src_var_unit = none
+plg_dest_var_name =  plg
+plg_dest_var_unit = mol kg-1
+plg_src_var_record = 1
+plg_src_var_gridspec = NONE
+plg_valid_min = 0.0
+#
+pdi_src_file = INPUT/init_ocean_cobalt.res.nc
+pdi_src_var_name = nsm
+pdi_src_var_unit = none
+pdi_dest_var_name =  pdi
+pdi_dest_var_unit = mol kg-1
+pdi_src_var_record = 1
+pdi_src_var_gridspec = NONE
+pdi_valid_min = 0.0
 #
 nlgz_src_file = INPUT/init_ocean_cobalt.res.nc
 nlgz_src_var_name = nlgz
@@ -385,6 +476,15 @@ silg_src_var_record = 1
 silg_src_var_gridspec = NONE
 silg_valid_min = 0.0
 #
+simd_src_file = INPUT/init_ocean_cobalt.res.nc
+simd_src_var_name = silg
+simd_src_var_unit = none
+simd_dest_var_name =  simd
+simd_dest_var_unit = mol kg-1 
+simd_src_var_record = 1
+simd_src_var_gridspec = NONE
+simd_valid_min = 0.0
+#
 sldon_src_file = INPUT/init_ocean_cobalt.res.nc
 sldon_src_var_name = sldon
 sldon_src_var_unit = none
@@ -457,6 +557,42 @@ ndet_btf_src_var_record = 1
 ndet_btf_src_var_gridspec = NONE
 ndet_btf_valid_min = 0.0
 #
+ndi_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+ndi_btf_src_var_name = ndet_btf
+ndi_btf_src_var_unit = none
+ndi_btf_dest_var_name =  ndi_btf
+ndi_btf_dest_var_unit = mol kg-1
+ndi_btf_src_var_record = 1
+ndi_btf_src_var_gridspec = NONE
+ndi_btf_valid_min = 0.0
+#
+nlg_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+nlg_btf_src_var_name = ndet_btf
+nlg_btf_src_var_unit = none
+nlg_btf_dest_var_name =  nlg_btf
+nlg_btf_dest_var_unit = mol kg-1
+nlg_btf_src_var_record = 1
+nlg_btf_src_var_gridspec = NONE
+nlg_btf_valid_min = 0.0
+#
+nmd_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+nmd_btf_src_var_name = ndet_btf
+nmd_btf_src_var_unit = none
+nmd_btf_dest_var_name =  nmd_btf
+nmd_btf_dest_var_unit = mol kg-1
+nmd_btf_src_var_record = 1
+nmd_btf_src_var_gridspec = NONE
+nmd_btf_valid_min = 0.0
+#
+nsm_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+nsm_btf_src_var_name = ndet_btf
+nsm_btf_src_var_unit = none
+nsm_btf_dest_var_name =  nsm_btf
+nsm_btf_dest_var_unit = mol kg-1
+nsm_btf_src_var_record = 1
+nsm_btf_src_var_gridspec = NONE
+nsm_btf_valid_min = 0.0
+#
 pdet_btf_src_file = INPUT/init_ocean_cobalt.res.nc
 pdet_btf_src_var_name = pdet_btf
 pdet_btf_src_var_unit = none
@@ -474,6 +610,60 @@ sidet_btf_dest_var_unit = mol kg-1
 sidet_btf_src_var_record = 1
 sidet_btf_src_var_gridspec = NONE
 sidet_btf_valid_min = 0.0
+#
+silg_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+silg_btf_src_var_name = sidet_btf
+silg_btf_src_var_unit = none
+silg_btf_dest_var_name =  silg_btf
+silg_btf_dest_var_unit = mol kg-1
+silg_btf_src_var_record = 1
+silg_btf_src_var_gridspec = NONE
+silg_btf_valid_min = 0.0
+#
+simd_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+simd_btf_src_var_name = sidet_btf
+simd_btf_src_var_unit = none
+simd_btf_dest_var_name =  simd_btf
+simd_btf_dest_var_unit = mol kg-1
+simd_btf_src_var_record = 1
+simd_btf_src_var_gridspec = NONE
+simd_btf_valid_min = 0.0
+#
+pdi_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+pdi_btf_src_var_name = pdet_btf
+pdi_btf_src_var_unit = none
+pdi_btf_dest_var_name =  pdi_btf
+pdi_btf_dest_var_unit = mol kg-1
+pdi_btf_src_var_record = 1
+pdi_btf_src_var_gridspec = NONE
+pdi_btf_valid_min = 0.0
+#
+plg_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+plg_btf_src_var_name = pdet_btf
+plg_btf_src_var_unit = none
+plg_btf_dest_var_name =  plg_btf
+plg_btf_dest_var_unit = mol kg-1
+plg_btf_src_var_record = 1
+plg_btf_src_var_gridspec = NONE
+plg_btf_valid_min = 0.0
+#
+pmd_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+pmd_btf_src_var_name = pdet_btf
+pmd_btf_src_var_unit = none
+pmd_btf_dest_var_name =  pmd_btf
+pmd_btf_dest_var_unit = mol kg-1
+pmd_btf_src_var_record = 1
+pmd_btf_src_var_gridspec = NONE
+pmd_btf_valid_min = 0.0
+#
+psm_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+psm_btf_src_var_name = pdet_btf
+psm_btf_src_var_unit = none
+psm_btf_dest_var_name =  psm_btf
+psm_btf_dest_var_unit = mol kg-1
+psm_btf_src_var_record = 1
+psm_btf_src_var_gridspec = NONE
+psm_btf_valid_min = 0.0
 #
 mu_mem_ndi_src_file = INPUT/init_ocean_cobalt.res.nc
 mu_mem_ndi_src_var_name = mu_mem_ndi
@@ -493,6 +683,15 @@ mu_mem_nlg_src_var_record = 1
 mu_mem_nlg_src_var_gridspec = NONE
 mu_mem_nlg_valid_min = 0.0
 #
+mu_mem_nmd_src_file = INPUT/init_ocean_cobalt.res.nc
+mu_mem_nmd_src_var_name = mu_mem_nlg
+mu_mem_nmd_src_var_unit = none
+mu_mem_nmd_dest_var_name =  mu_mem_nmd
+mu_mem_nmd_dest_var_unit = mol kg-1
+mu_mem_nmd_src_var_record = 1
+mu_mem_nmd_src_var_gridspec = NONE
+mu_mem_nmd_valid_min = 0.0
+#
 mu_mem_nsm_src_file = INPUT/init_ocean_cobalt.res.nc
 mu_mem_nsm_src_var_name = mu_mem_nsm
 mu_mem_nsm_src_var_unit = none
@@ -510,6 +709,42 @@ fedet_btf_dest_var_unit = mol kg-1
 fedet_btf_src_var_record = 1
 fedet_btf_src_var_gridspec = NONE
 fedet_btf_valid_min = 0.0
+#
+fedi_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+fedi_btf_src_var_name = fedet_btf
+fedi_btf_src_var_unit = none
+fedi_btf_dest_var_name =  fedi_btf
+fedi_btf_dest_var_unit = mol kg-1
+fedi_btf_src_var_record = 1
+fedi_btf_src_var_gridspec = NONE
+fedi_btf_valid_min = 0.0
+#
+felg_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+felg_btf_src_var_name = fedet_btf
+felg_btf_src_var_unit = none
+felg_btf_dest_var_name =  felg_btf
+felg_btf_dest_var_unit = mol kg-1
+felg_btf_src_var_record = 1
+felg_btf_src_var_gridspec = NONE
+felg_btf_valid_min = 0.0
+#
+femd_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+femd_btf_src_var_name = fedet_btf
+femd_btf_src_var_unit = none
+femd_btf_dest_var_name =  femd_btf
+femd_btf_dest_var_unit = mol kg-1
+femd_btf_src_var_record = 1
+femd_btf_src_var_gridspec = NONE
+femd_btf_valid_min = 0.0
+#
+fesm_btf_src_file = INPUT/init_ocean_cobalt.res.nc
+fesm_btf_src_var_name = fedet_btf
+fesm_btf_src_var_unit = none
+fesm_btf_dest_var_name =  fesm_btf
+fesm_btf_dest_var_unit = mol kg-1
+fesm_btf_src_var_record = 1
+fesm_btf_src_var_gridspec = NONE
+fesm_btf_valid_min = 0.0
 #
 #f1p-> required for cobalt new schemes + nh3 ocean/atm exchange
 # min = 0,  max = 1. from input dataset

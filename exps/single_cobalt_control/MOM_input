@@ -24,6 +24,7 @@ DT = 900.0                      !   [s]
                                 ! is actually used will be an integer fraction of the
                                 ! forcing time-step (DT_FORCING in ocean-only mode or the
                                 ! coupling timestep in coupled mode.)
+DT_THERM = 1800.0
 BOUND_SALINITY = True           !   [Boolean] default = False
                                 ! If true, limit salinity to being positive. (The sea-ice
                                 ! model may ask for more salt than is available and
@@ -241,7 +242,7 @@ REMAPPING_SCHEME = "PPM_H4"     ! default = "PLM"
 ! Parameters providing information about the lateral grid.
 
 ! === module MOM_state_initialization ===
-INIT_LAYERS_FROM_Z_FILE = True  !   [Boolean] default = False
+INIT_LAYERS_FROM_Z_FILE = True  !   
                                 ! If true, intialize the layer thicknesses, temperatures,
                                 ! and salnities from a Z-space file on a latitude-
                                 ! longitude grid.
@@ -264,7 +265,7 @@ Z_INIT_FILE_PTEMP_VAR = "ptemp_an" ! default = "ptemp"
 Z_INIT_FILE_SALT_VAR = "s_an"   ! default = "salt"
                                 ! The name of the salinity variable in
                                 ! SALT_Z_INIT_FILE.
-Z_INIT_ALE_REMAPPING = True     !   [Boolean] default = False
+Z_INIT_ALE_REMAPPING = True     !   
                                 ! If True, then remap straight to model coordinate from file.
 
 ! === module MOM_diag_mediator ===

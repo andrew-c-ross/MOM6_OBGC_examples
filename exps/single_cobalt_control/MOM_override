@@ -71,3 +71,5 @@ GENERIC_TRACER_IC_FILE = "MOM_GENERICS.res.nc"
 ! GEOTHERMAL_VARNAME = "geothermal_hf" ! default = "geo_heat"
 
 #override   ADJUST_NET_FRESH_WATER_TO_ZERO = False
+
+#override MAX_P_SURF = 130000
